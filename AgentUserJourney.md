@@ -37,6 +37,8 @@
 
 ## 2. Login & Authentication
 
+![Login Page](./AgentFlow_ScreenShots/LoginPage.png)
+
 ```mermaid
 flowchart TD
     A([Open Platform URL]) --> B[Login Screen\nWork Email + Work Password]
@@ -61,7 +63,7 @@ The dashboard is the Agent's home screen and is divided into three major areas.
 
 ### 3.1 Top Summary Cards
 
-![Agent Dashboard — Summary Cards](./Screenshot_2026-04-14_223953.png)
+![Agent Dashboard — Summary Cards](./AgentFlow_ScreenShots/Agent_Dashboard.png)
 
 | Card | What it shows |
 |---|---|
@@ -73,7 +75,7 @@ Each card has a `→` arrow for drilling into more detail.
 
 ### 3.2 Performance Overview
 
-![Agent Dashboard — Performance Overview](./Screenshot_2026-04-14_224002.png)
+![Agent Dashboard — Performance Overview](./AgentFlow_ScreenShots/Agent_Dashboard_performance_overview.png)
 
 **Client Rating panel:**
 - Star breakdown (5 → 1 stars) with count per rating level
@@ -88,7 +90,7 @@ Each card has a `→` arrow for drilling into more detail.
 
 ### 3.3 Recent Calls & Last 5 Feedbacks
 
-![Agent Dashboard — Recent Calls and Feedbacks](./Screenshot_2026-04-14_224022.png)
+![Agent Dashboard — Recent Calls and Feedbacks](./AgentFlow_ScreenShots/-04-14_224022.png)
 
 Displays the last few interactions at a glance:
 
@@ -117,7 +119,7 @@ A **"View More →"** button navigates to the full All Interactions screen.
 
 ### 4.1 Incoming Call Notification
 
-![Incoming Video Call Notification](./Screenshot_2026-04-14_224108.png)
+![Incoming Video Call Notification](./AgentFlow_ScreenShots/IncomingCallNotification.png)
 
 When a customer initiates a call, the agent sees a **pop-up panel** in the top-right corner of the screen containing:
 
@@ -134,7 +136,7 @@ When a customer initiates a call, the agent sees a **pop-up panel** in the top-r
 
 ### 4.2 Active Video Call Screen
 
-![Active Video Call](./Screenshot_2026-04-14_224434.png)
+![Active Video Call](./AgentFlow_ScreenShots/Active_VideoCallScreen.png)
 
 Once the call is accepted, the agent enters the full-screen call interface:
 
@@ -172,7 +174,7 @@ Once the call is accepted, the agent enters the full-screen call interface:
 
 ### 4.3 Transfer Call & In-Call Messages
 
-![Transfer Call Options and In-Call Messages](./Screenshot_2026-04-14_224628.png)
+![Transfer Call Options and In-Call Messages](./AgentFlow_ScreenShots/TransferCall_InCallMessage.png)
 
 **Top-right action buttons:**
 - **Messages** — opens the In-Call messages panel (real-time chat with the customer during the call)
@@ -186,7 +188,7 @@ Once the call is accepted, the agent enters the full-screen call interface:
 
 ### 4.4 Ask to Join (Supervisor/Agent)
 
-![Ask to Join Modal](./Screenshot_2026-04-14_224641.png)
+![Ask to Join Modal](./AgentFlow_ScreenShots/CallAskToJoin.png)
 
 Clicking **Ask to join** opens a modal: **"Request an agent or supervisor to join"**
 
@@ -200,7 +202,7 @@ Clicking **Ask to join** opens a modal: **"Request an agent or supervisor to joi
 
 ### 4.5 Join Request Progress
 
-![Join Request In Progress](./Screenshot_2026-04-14_224708.png)
+![Join Request In Progress](./AgentFlow_ScreenShots/SupervisorOrAgentJoinRequest.png)
 
 After requesting, a progress tracker appears:
 
@@ -218,7 +220,7 @@ After requesting, a progress tracker appears:
 
 ### 4.6 Supervisor Joined — Screen Sharing View
 
-![Supervisor Joined with Screen Share](./Screenshot_2026-04-14_224908.png)
+![Supervisor Joined with Screen Share](./AgentFlow_ScreenShots/Supervisor_Joined_SS.png)
 
 Once the supervisor joins and shares their screen, it is visible in the main call area alongside all participant tiles (You, Customer, SupervisorOPD Two). Each tile is labelled with the participant's name and mute indicator.
 
@@ -228,7 +230,7 @@ Once the supervisor joins and shares their screen, it is visible in the main cal
 
 **Route:** `/service/agent/allInteractions`
 
-![All Interactions — Call History](./Screenshot_2026-04-15_091559.png)
+![All Interactions — Call History](./AgentFlow_ScreenShots/Call_History.png)
 
 - Title: **Call History**
 - Auto-refresh indicator: *"Updated every 10s"*
@@ -274,7 +276,7 @@ Additional controls:
 
 **Route:** `/service/agent/leaderboard`
 
-![Leaderboard](./Screenshot_2026-04-14_224723.png)
+![Leaderboard](./AgentFlow_ScreenShots/LeaderBoard.png)
 
 ### 6.1 Filter Bar
 
@@ -322,7 +324,7 @@ A sidebar panel showing the current activity streak:
 
 **Route:** `/service/agent/contactUs`
 
-![Contact Us — Requests List](./Screenshot_2026-04-14_224741.png)
+![Contact Us — Requests List](./AgentFlow_ScreenShots/ContactUs_List.png)
 
 Agents can raise support tickets / requests directly to supervisors.
 
@@ -371,8 +373,8 @@ The agent's status is visible in the **bottom-left sidebar** at all times.
 | Status | Colour | Trigger |
 |---|---|---|
 | Available | 🟢 Green | Default on login; manually set |
-| Away | 🟡 Grey | Manually set by agent |
-| In Call | 🟢 Green (special) | Automatically set when a call is active |
+| Away | 🟡 Yellow | Manually set by agent |
+| In Call | 🔴 Red (special) | Automatically set when a call is active |
 
 ### How to Change Status
 1. Click on the status badge (e.g. `● Available ▾`) next to the agent's name in the bottom-left
